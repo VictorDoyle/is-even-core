@@ -1,0 +1,17 @@
+{
+  "name": "is-even-core",
+  "description": "True zero-dependency package to check if a number is even",
+  "author": "Victor Doyle",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "license": "MIT"
+}

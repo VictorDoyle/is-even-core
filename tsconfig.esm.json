@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ES2020",
+    "declaration": true,
+    "outDir": "dist/esm",
+    "strict": true,
+    "skipLibCheck": true,
+    "typeRoots": []
+  },
+  "include": ["src/index.ts"]
+}
