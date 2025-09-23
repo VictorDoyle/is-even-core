@@ -5,6 +5,8 @@
     "declaration": true,
     "outDir": "dist/esm",
     "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "typeRoots": []
   },
