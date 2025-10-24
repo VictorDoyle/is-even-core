@@ -1,4 +1,4 @@
-const isEven = require("../dist/cjs/index.js");
+const isEven = require("../dist/cjs/index.js").default;
 
 function test(description, fn) {
   try {
