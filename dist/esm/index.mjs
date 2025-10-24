@@ -1,5 +1,5 @@
 export default function isEven(n) {
-    const num = typeof n === "string" ? parseInt(n, 10) : n;
+    const num = typeof n === "string" ? parseFloat(n) : n;
     if (isNaN(num) || !Number.isInteger(num)) {
         throw new Error(`Invalid input: '${n}' is not a valid integer or numeric string.`);
     }

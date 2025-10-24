@@ -27,8 +27,11 @@
     "rename-esm": "mv dist/esm/index.js dist/esm/index.mjs",
     "build": "npm run build:cjs && npm run build:esm && npm run rename-esm",
     "test": "npm run test:cjs && npm run test:esm",
-    "test:cjs": "node tests/test-commonjs.js",
-    "test:esm": "node tests/test-esm.mjs"
+    "test:cjs": "node tests/test-common-js.js",
+    "test:esm": "node tests/test-esm.mjs",
+    "prepublishOnly": "npm run build && npm test",
+    "publish:github": "npm publish --registry=https://npm.pkg.github.com",
+    "publish:npm": "npm publish --registry=https://registry.npmjs.org"
   },
   "keywords": [
     "even",
@@ -37,6 +40,10 @@
     "utility",
     "zero-dependency"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "@victordoyle:registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
